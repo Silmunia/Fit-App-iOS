@@ -13,6 +13,8 @@
 		961A2F92273C7F2F0012FFD8 /* RunningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F91273C7F2F0012FFD8 /* RunningViewController.swift */; };
 		961A2F94273C87560012FFD8 /* HistoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F93273C87560012FFD8 /* HistoryTableCell.swift */; };
 		961A2F98273C8F7B0012FFD8 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F97273C8F7B0012FFD8 /* UIImageExtension.swift */; };
+		961A2F9A273C95300012FFD8 /* UserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F99273C95300012FFD8 /* UserNameView.swift */; };
+		961A2F9C273CA8070012FFD8 /* BMIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F9B273CA8070012FFD8 /* BMIView.swift */; };
 		96E349802729ACB0004D60CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3497F2729ACB0004D60CE /* AppDelegate.swift */; };
 		96E349822729ACB0004D60CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E349812729ACB0004D60CE /* SceneDelegate.swift */; };
 		96E349842729ACB0004D60CE /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E349832729ACB0004D60CE /* TabViewController.swift */; };
@@ -27,6 +29,8 @@
 		961A2F91273C7F2F0012FFD8 /* RunningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningViewController.swift; sourceTree = "<group>"; };
 		961A2F93273C87560012FFD8 /* HistoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableCell.swift; sourceTree = "<group>"; };
 		961A2F97273C8F7B0012FFD8 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		961A2F99273C95300012FFD8 /* UserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameView.swift; sourceTree = "<group>"; };
+		961A2F9B273CA8070012FFD8 /* BMIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIView.swift; sourceTree = "<group>"; };
 		96E3497C2729ACB0004D60CE /* FitAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E3497F2729ACB0004D60CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E349812729ACB0004D60CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -63,6 +67,8 @@
 			isa = PBXGroup;
 			children = (
 				961A2F93273C87560012FFD8 /* HistoryTableCell.swift */,
+				961A2F99273C95300012FFD8 /* UserNameView.swift */,
+				961A2F9B273CA8070012FFD8 /* BMIView.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -178,6 +184,7 @@
 			files = (
 				961A2F92273C7F2F0012FFD8 /* RunningViewController.swift in Sources */,
 				961A2F8E273C7E980012FFD8 /* CalculatorViewController.swift in Sources */,
+				961A2F9A273C95300012FFD8 /* UserNameView.swift in Sources */,
 				96E349842729ACB0004D60CE /* TabViewController.swift in Sources */,
 				961A2F94273C87560012FFD8 /* HistoryTableCell.swift in Sources */,
 				96E349802729ACB0004D60CE /* AppDelegate.swift in Sources */,
@@ -185,6 +192,7 @@
 				961A2F90273C7F1F0012FFD8 /* GoalViewController.swift in Sources */,
 				96E349822729ACB0004D60CE /* SceneDelegate.swift in Sources */,
 				961A2F8C273C7E800012FFD8 /* HistoryViewController.swift in Sources */,
+				961A2F9C273CA8070012FFD8 /* BMIView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
