@@ -16,7 +16,8 @@ class BMIView: UIView {
     lazy var valueLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 96)
+        label.font = .systemFont(ofSize: 96, weight: .bold)
+        label.textColor = .darkGray
         label.textAlignment = .center
         label.text = "\(bmiValue)"
         self.addSubview(label)
@@ -26,7 +27,8 @@ class BMIView: UIView {
     lazy var categoryLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 32)
+        label.font = .systemFont(ofSize: 32, weight: .bold)
+        label.textColor = .darkGray
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 2
         label.textAlignment = .center
