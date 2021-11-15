@@ -16,7 +16,8 @@ class UserNameView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = name
-        label.font = UIFont.systemFont(ofSize: 28)
+        label.font = .systemFont(ofSize: 28, weight: .bold)
+        label.textColor = .darkGray
         self.addSubview(label)
         return label
     }()
@@ -25,7 +26,8 @@ class UserNameView: UIView {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "\(age) anos"
-        label.font = UIFont.systemFont(ofSize: 24)
+        label.font = .systemFont(ofSize: 24, weight: .bold)
+        label.textColor = .darkGray
         self.addSubview(label)
         return label
     }()

@@ -28,7 +28,8 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 2
-        label.font = UIFont.systemFont(ofSize: 24)
+        label.font = .systemFont(ofSize: 24, weight: .bold)
+        label.textColor = .darkGray
         label.text = "Peso (kg)"
         self.view.addSubview(label)
         return label
@@ -50,7 +51,8 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.lineBreakMode = .byWordWrapping
         label.numberOfLines = 2
-        label.font = UIFont.systemFont(ofSize: 24)
+        label.font = .systemFont(ofSize: 24, weight: .bold)
+        label.textColor = .darkGray
         label.text = "Altura (cm)"
         self.view.addSubview(label)
         return label
