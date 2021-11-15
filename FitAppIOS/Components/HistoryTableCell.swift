@@ -27,6 +27,8 @@ class HistoryTableCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = cellDate
+        label.font = .systemFont(ofSize: 22, weight: .bold)
+        label.textColor = .darkGray
         self.addSubview(label)
         return label
     }()
@@ -35,6 +37,8 @@ class HistoryTableCell: UITableViewCell {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.text = "Duração: \(cellDuration ?? 0) min"
+        label.font = .systemFont(ofSize: 16, weight: .bold)
+        label.textColor = .darkGray
         self.addSubview(label)
         return label
     }()

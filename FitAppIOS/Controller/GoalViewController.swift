@@ -53,6 +53,57 @@ class GoalViewController: UIViewController {
         self.view.addSubview(label)
         return label
     }()
+    
+    lazy var stepImage: UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(systemName: "figure.walk")
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.tintColor = .systemBlue
+        self.view.addSubview(view)
+        return view
+    }()
+    
+    lazy var stepLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 38, weight: .bold)
+        label.textColor = .darkGray
+        label.text = "5420"
+        label.textAlignment = .center
+        self.view.addSubview(label)
+        return label
+    }()
+    
+    lazy var flameImage: UIImageView = {
+        let view = UIImageView()
+        view.image = UIImage(systemName: "flame.fill")
+        view.translatesAutoresizingMaskIntoConstraints = false
+        view.tintColor = .systemBlue
+        self.view.addSubview(view)
+        return view
+    }()
+    
+    lazy var flameLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 38, weight: .bold)
+        label.textColor = .darkGray
+        label.text = "1002"
+        label.textAlignment = .center
+        self.view.addSubview(label)
+        return label
+    }()
+    
+    lazy var connectionLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .systemFont(ofSize: 26, weight: .bold)
+        label.textColor = .darkGray
+        label.text = "PULSEIRA CONECTADA"
+        label.textAlignment = .center
+        self.view.addSubview(label)
+        return label
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -67,7 +118,30 @@ class GoalViewController: UIViewController {
             trackerImage.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: 5.5),
             trackerImage.widthAnchor.constraint(equalToConstant: 360),
             
-            buttonBackground.topAnchor.constraint(equalTo: trackerImage.bottomAnchor, constant: 50),
+            stepImage.topAnchor.constraint(equalTo: trackerImage.bottomAnchor, constant: 30),
+            stepImage.heightAnchor.constraint(equalToConstant: 50),
+            stepImage.widthAnchor.constraint(equalToConstant: 50),
+            stepImage.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 30),
+            
+            stepLabel.centerYAnchor.constraint(equalTo: stepImage.centerYAnchor),
+            stepLabel.heightAnchor.constraint(equalToConstant: stepLabel.font.lineHeight),
+            stepLabel.leadingAnchor.constraint(equalTo: stepImage.trailingAnchor, constant: 5),
+            
+            flameLabel.centerYAnchor.constraint(equalTo: stepImage.centerYAnchor),
+            flameLabel.heightAnchor.constraint(equalToConstant: flameLabel.font.lineHeight),
+            flameLabel.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -30),
+            
+            flameImage.topAnchor.constraint(equalTo: stepImage.topAnchor),
+            flameImage.heightAnchor.constraint(equalTo: stepImage.heightAnchor),
+            flameImage.widthAnchor.constraint(equalTo: stepImage.widthAnchor),
+            flameImage.trailingAnchor.constraint(equalTo: flameLabel.leadingAnchor, constant: -5),
+            
+            connectionLabel.topAnchor.constraint(equalTo: stepImage.bottomAnchor, constant: 80),
+            connectionLabel.heightAnchor.constraint(equalToConstant: connectionLabel.font.lineHeight),
+            connectionLabel.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+            connectionLabel.widthAnchor.constraint(equalToConstant: 300),
+            
+            buttonBackground.topAnchor.constraint(equalTo: connectionLabel.bottomAnchor, constant: 50),
             buttonBackground.bottomAnchor.constraint(equalTo: buttonBackground.topAnchor, constant: 80),
             buttonBackground.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             buttonBackground.widthAnchor.constraint(equalToConstant: 240),
