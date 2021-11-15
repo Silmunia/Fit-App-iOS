@@ -65,7 +65,7 @@ class UserNameView: UIView {
             roundBackground.topAnchor.constraint(equalTo: self.topAnchor, constant: 10),
             roundBackground.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 0),
             roundBackground.widthAnchor.constraint(equalToConstant: 90),
-            roundBackground.heightAnchor.constraint(equalToConstant: 90),
+            roundBackground.bottomAnchor.constraint(equalTo: roundBackground.topAnchor, constant: 90),
             
             roundImage.centerXAnchor.constraint(equalTo: roundBackground.centerXAnchor),
             roundImage.centerYAnchor.constraint(equalTo: roundBackground.centerYAnchor),

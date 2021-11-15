@@ -44,13 +44,15 @@ class BMIView: UIView {
     
     private func configureLayout() {
         NSLayoutConstraint.activate([
-            categoryLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: 10),
+            valueLabel.topAnchor.constraint(equalTo: self.topAnchor),
+            valueLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
+            valueLabel.widthAnchor.constraint(equalTo: self.widthAnchor),
+            
+            categoryLabel.topAnchor.constraint(equalTo: valueLabel.bottomAnchor),
             categoryLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
             categoryLabel.widthAnchor.constraint(equalTo: self.widthAnchor),
             
-            valueLabel.bottomAnchor.constraint(equalTo: categoryLabel.topAnchor),
-            valueLabel.centerXAnchor.constraint(equalTo: self.centerXAnchor),
-            valueLabel.widthAnchor.constraint(equalTo: self.widthAnchor)
+            self.bottomAnchor.constraint(equalTo: categoryLabel.bottomAnchor),
         ])
     }
 
