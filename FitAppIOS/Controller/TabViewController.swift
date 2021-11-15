@@ -31,7 +31,10 @@ class TabViewController: UITabBarController {
         calculatorViewController.title = ""
         calculatorViewController.tabBarItem = UITabBarItem(title: "", image: UIImage(systemName: "person"), selectedImage: UIImage(systemName: "person.fill"))
         
-        self.viewControllers = [historyViewController, goalViewController, calculatorViewController]
+        let goalNavigationController = UINavigationController(rootViewController: goalViewController)
+        let historyNavigationController = UINavigationController(rootViewController: historyViewController)
+        
+        self.viewControllers = [historyNavigationController, goalNavigationController, calculatorViewController]
         self.selectedIndex = 1
     }
 

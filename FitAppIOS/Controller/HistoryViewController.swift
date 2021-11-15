@@ -41,6 +41,11 @@ class HistoryViewController: UITableViewController {
         return cell
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let dataController = DataViewController()
+        self.navigationController?.pushViewController(dataController, animated: true)
+    }
+    
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
