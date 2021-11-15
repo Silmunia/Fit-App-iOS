@@ -33,16 +33,14 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
         self.view.addSubview(label)
         return label
     }()
-
-    lazy var weightTextField: UITextView = {
-        let field = UITextView()
+    
+    lazy var weightTextField: UITextField = {
+        let field = UITextField()
         field.translatesAutoresizingMaskIntoConstraints = false
-        field.delegate = self
-        field.layer.borderWidth = 1
-        field.layer.cornerRadius = 5
-        field.layer.borderColor = UIColor.systemGray3.cgColor
-        field.font = UIFont.systemFont(ofSize: 24)
-        field.text = "0"
+        field.font = .systemFont(ofSize: 24)
+        field.placeholder = "0"
+        field.borderStyle = .roundedRect
+        field.keyboardType = .decimalPad
         self.view.addSubview(field)
         return field
     }()
@@ -57,16 +55,14 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
         self.view.addSubview(label)
         return label
     }()
-
-    lazy var heightTextField: UITextView = {
-        let field = UITextView()
+    
+    lazy var heightTextField: UITextField = {
+        let field = UITextField()
         field.translatesAutoresizingMaskIntoConstraints = false
-        field.delegate = self
-        field.layer.borderWidth = 1
-        field.layer.cornerRadius = 5
-        field.layer.borderColor = UIColor.systemGray3.cgColor
-        field.font = UIFont.systemFont(ofSize: 24)
-        field.text = "0"
+        field.font = .systemFont(ofSize: 24)
+        field.placeholder = "0"
+        field.borderStyle = .roundedRect
+        field.keyboardType = .numberPad
         self.view.addSubview(field)
         return field
     }()
@@ -111,6 +107,10 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         configureLayout()
+        
+        let tapRecognizer = UITapGestureRecognizer()
+        tapRecognizer.addTarget(self, action: #selector(CalculatorViewController.didTapView))
+        self.view.addGestureRecognizer(tapRecognizer)
     }
     
     private func configureLayout() {
@@ -160,20 +160,26 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
     }
     
     @objc func calculateBMI() {
-        let userWeight: Float = (weightTextField.text as NSString).floatValue
-        let userHeight: Float = ((heightTextField.text as NSString).floatValue / 100)
-        
-        var bmiResult: Float?
-        
-        if (userHeight <= 0 || userWeight <= 0) {
-            bmiResult = 0
-        } else {
-            bmiResult = userWeight / (userHeight * userHeight)
-        }
-        
-        if let bmiValue = bmiResult {
-            bmiProfile.setValueLabel(with: bmiValue)
+        if let weight = weightTextField.text, let height = heightTextField.text {
+            let userWeight = (weight as NSString).floatValue
+            let userHeight = ((height as NSString).floatValue) / 100
+            
+            var bmiResult: Float?
+            
+            if (userHeight <= 0 || userWeight <= 0) {
+                bmiResult = 0
+            } else {
+                bmiResult = userWeight / (userHeight * userHeight)
+            }
+            
+            if let bmiValue = bmiResult {
+                bmiProfile.setValueLabel(with: bmiValue)
+            }
         }
         bmiProfile.isHidden = false
+    }
+    
+    @objc func didTapView(){
+      self.view.endEditing(true)
     }
 }
