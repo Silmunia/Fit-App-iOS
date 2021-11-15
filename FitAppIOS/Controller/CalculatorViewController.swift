@@ -87,6 +87,7 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
         let button = UIButton()
         button.translatesAutoresizingMaskIntoConstraints = false
         button.isUserInteractionEnabled = true
+        button.addTarget(self, action: #selector(calculateBMI), for: .touchUpInside)
         self.view.addSubview(button)
         return button
     }()
@@ -156,5 +157,23 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
             bmiProfile.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.7),
             bmiProfile.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
         ])
+    }
+    
+    @objc func calculateBMI() {
+        let userWeight: Float = (weightTextField.text as NSString).floatValue
+        let userHeight: Float = ((heightTextField.text as NSString).floatValue / 100)
+        
+        var bmiResult: Float?
+        
+        if (userHeight <= 0 || userWeight <= 0) {
+            bmiResult = 0
+        } else {
+            bmiResult = userWeight / (userHeight * userHeight)
+        }
+        
+        if let bmiValue = bmiResult {
+            bmiProfile.setValueLabel(with: bmiValue)
+        }
+        bmiProfile.isHidden = false
     }
 }

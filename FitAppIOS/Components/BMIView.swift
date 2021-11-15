@@ -26,7 +26,9 @@ class BMIView: UIView {
     lazy var categoryLabel: UILabel = {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = UIFont.systemFont(ofSize: 38)
+        label.font = UIFont.systemFont(ofSize: 32)
+        label.lineBreakMode = .byWordWrapping
+        label.numberOfLines = 2
         label.textAlignment = .center
         label.text = bmiCategory
         self.addSubview(label)
@@ -54,6 +56,42 @@ class BMIView: UIView {
             
             self.bottomAnchor.constraint(equalTo: categoryLabel.bottomAnchor),
         ])
+    }
+    
+    public func setValueLabel(with value: Float) {
+        self.bmiValue = value
+        updateBMICategory()
+    }
+    
+    private func updateBMICategory() {
+        let currentBMI: Float = bmiValue
+        var newCategory: String = ""
+        
+        switch (currentBMI) {
+        case 0..<16.5:
+            newCategory = "Peso muito abaixo do normal"
+        case 16.5..<18.5:
+            newCategory = "Peso abaixo do normal"
+        case 18.5..<25:
+            newCategory = "Normal"
+        case 25..<30:
+            newCategory = "Pré-obesidade"
+        case 30..<35:
+            newCategory = "Obesidade Classe 1"
+        case 35..<40:
+            newCategory = "Obesidade Classe 2"
+        default:
+            newCategory = "Obesidade Classe 3"
+        }
+        
+        self.bmiCategory = newCategory
+        
+        updateLabels()
+    }
+    
+    private func updateLabels() {
+        valueLabel.text = String(format: "%.2f", bmiValue)
+        categoryLabel.text = bmiCategory
     }
 
 }
