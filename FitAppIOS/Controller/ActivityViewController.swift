@@ -243,7 +243,7 @@ class ActivityViewController: UIViewController {
             heartLabel.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.3),
             heartLabel.centerXAnchor.constraint(equalTo: heartImage.centerXAnchor),
             
-            playBackground.topAnchor.constraint(equalTo: calorieLabel.bottomAnchor, constant: 80),
+            playBackground.topAnchor.constraint(equalTo: calorieLabel.bottomAnchor, constant: 160),
             playBackground.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: -self.view.bounds.width/4.5),
             playBackground.widthAnchor.constraint(equalToConstant: 160),
             playBackground.heightAnchor.constraint(equalTo: playBackground.widthAnchor),
@@ -258,7 +258,7 @@ class ActivityViewController: UIViewController {
             playButton.widthAnchor.constraint(equalTo: playBackground.widthAnchor),
             playButton.heightAnchor.constraint(equalTo: playButton.widthAnchor),
             
-            stopBackground.topAnchor.constraint(equalTo: calorieLabel.bottomAnchor, constant: 80),
+            stopBackground.topAnchor.constraint(equalTo: playBackground.topAnchor),
             stopBackground.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: self.view.bounds.width/4.5),
             stopBackground.widthAnchor.constraint(equalToConstant: 160),
             stopBackground.heightAnchor.constraint(equalTo: stopBackground.widthAnchor),
@@ -273,7 +273,7 @@ class ActivityViewController: UIViewController {
             stopButton.widthAnchor.constraint(equalTo: stopBackground.widthAnchor),
             stopButton.heightAnchor.constraint(equalTo: stopButton.widthAnchor),
             
-            pauseBackground.topAnchor.constraint(equalTo: calorieLabel.bottomAnchor, constant: 80),
+            pauseBackground.topAnchor.constraint(equalTo: playBackground.topAnchor),
             pauseBackground.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
             pauseBackground.widthAnchor.constraint(equalToConstant: 160),
             pauseBackground.heightAnchor.constraint(equalTo: pauseBackground.widthAnchor),
