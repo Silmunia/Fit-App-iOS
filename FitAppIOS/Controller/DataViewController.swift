@@ -132,7 +132,7 @@ class DataViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: valueTextSize, weight: .bold)
         label.textColor = .darkGray
-        label.text = "273 k"
+        label.text = "273 kCal"
         label.textAlignment = .center
         self.view.addSubview(label)
         return label

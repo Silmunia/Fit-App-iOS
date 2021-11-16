@@ -159,6 +159,8 @@ class GoalViewController: UIViewController {
     }
     
     @objc func startActivity() {
-        
+        let activityController = ActivityViewController()
+        activityController.hidesBottomBarWhenPushed = true
+        self.navigationController?.pushViewController(activityController, animated: true)
     }
 }

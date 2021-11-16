@@ -109,6 +109,7 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
         super.viewDidLoad()
         view.backgroundColor = UIColor.white
         configureLayout()
+        bmiProfile.isHidden = true
         
         let tapRecognizer = UITapGestureRecognizer()
         tapRecognizer.addTarget(self, action: #selector(CalculatorViewController.didTapView))
