@@ -344,7 +344,7 @@
 				DEVELOPMENT_TEAM = Q2AATBYW8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitAppIOS/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Fit App";
+				INFOPLIST_KEY_CFBundleDisplayName = "TCC Fit App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -355,7 +355,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.henriquepcosta.fitapp.FitAppIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.henriquepcosta.fitapp.TCCFitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -373,7 +373,7 @@
 				DEVELOPMENT_TEAM = Q2AATBYW8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitAppIOS/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = "Fit App";
+				INFOPLIST_KEY_CFBundleDisplayName = "TCC Fit App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
@@ -384,7 +384,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.henriquepcosta.fitapp.FitAppIOS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.henriquepcosta.fitapp.TCCFitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
