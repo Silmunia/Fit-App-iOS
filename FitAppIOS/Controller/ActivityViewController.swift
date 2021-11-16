@@ -10,10 +10,12 @@ import UIKit
 class ActivityViewController: UIViewController {
     
     var distanceValue: Float = 0
-    var calorieCounter: Int = 0
+    var calorieCounter: Float = 0
     var timeCounter: [Int] = [0, 0, 0]
     
     var isRunning: Bool = false
+    
+    var timer: Timer?
     
     lazy var titleLabel: UILabel = {
         let label = UILabel()
@@ -51,7 +53,7 @@ class ActivityViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 22, weight: .bold)
         label.textColor = .darkGray
-        label.text = "\(calorieCounter) kCal"
+        label.text = String(format: "%.1f kCal", calorieCounter)
         label.textAlignment = .center
         self.view.addSubview(label)
         return label
@@ -326,13 +328,58 @@ class ActivityViewController: UIViewController {
     
     @objc func startRunning() {
         toggleIsRunning()
+        timer = Timer.scheduledTimer(timeInterval: 0.2, target: self, selector: #selector(fireTimer), userInfo: nil, repeats: true)
     }
     
     @objc func pauseRunning() {
         toggleIsRunning()
+        timer?.invalidate()
     }
     
     @objc func stopRunning() {
+        clearTime()
+    }
+    
+    @objc func fireTimer() {
+        timeCounter[2] += 1
+        
+        distanceValue += 0.00266
+        
+        calorieCounter += 0.000605
+        
+        if (timeCounter[2] == 30 || timeCounter[2] == 60) {
+            calorieCounter += 1
+        }
+        
+        if (timeCounter[2] == 60) {
+            timeCounter[2] = 0
+            
+            timeCounter[1] += 1
+            
+            if (timeCounter[1] == 60) {
+                timeCounter[1] = 0
+                
+                timeCounter[0] += 1
+            }
+        }
+        
+        updateLabels()
+    }
+    
+    private func updateLabels() {
+        timeLabel.text = String(format: "%02d:%02d:%02d", timeCounter[0], timeCounter[1], timeCounter[2])
+        
+        distanceLabel.text = String(format: "%.1f km", distanceValue)
+        
+        calorieLabel.text = String(format: "%.1f kCal", calorieCounter)
+    }
+    
+    private func clearTime() {
+        timeCounter = [0, 0, 0]
+        distanceValue = 0
+        calorieCounter = 0
+        
+        updateLabels()
     }
 
 }
