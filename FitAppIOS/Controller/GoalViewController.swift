@@ -35,6 +35,7 @@ class GoalViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.isUserInteractionEnabled = true
         button.addTarget(self, action: #selector(startActivity), for: .touchUpInside)
+        button.accessibilityLabel = "Começar atividade"
         self.view.addSubview(button)
         return button
     }()

@@ -128,6 +128,7 @@ class ActivityViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.isUserInteractionEnabled = true
         button.addTarget(self, action: #selector(startRunning), for: .touchUpInside)
+        button.accessibilityLabel = "Começar corrida"
         self.view.addSubview(button)
         return button
     }()
@@ -161,6 +162,7 @@ class ActivityViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.isUserInteractionEnabled = true
         button.addTarget(self, action: #selector(stopRunning), for: .touchUpInside)
+        button.accessibilityLabel = "Parar corrida"
         self.view.addSubview(button)
         return button
     }()
@@ -194,6 +196,7 @@ class ActivityViewController: UIViewController {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.isUserInteractionEnabled = true
         button.addTarget(self, action: #selector(pauseRunning), for: .touchUpInside)
+        button.accessibilityLabel = "Pausar corrida"
         self.view.addSubview(button)
         return button
     }()

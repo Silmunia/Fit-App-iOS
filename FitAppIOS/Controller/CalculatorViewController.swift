@@ -42,6 +42,7 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
         field.placeholder = "0"
         field.borderStyle = .roundedRect
         field.keyboardType = .decimalPad
+        field.accessibilityLabel = "Peso do usuário"
         self.view.addSubview(field)
         return field
     }()
@@ -65,6 +66,7 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
         field.placeholder = "0"
         field.borderStyle = .roundedRect
         field.keyboardType = .numberPad
+        field.accessibilityLabel = "Altura do usuário"
         self.view.addSubview(field)
         return field
     }()
@@ -86,6 +88,7 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
         button.translatesAutoresizingMaskIntoConstraints = false
         button.isUserInteractionEnabled = true
         button.addTarget(self, action: #selector(calculateBMI), for: .touchUpInside)
+        button.accessibilityLabel = "Calcular IMC"
         self.view.addSubview(button)
         return button
     }()
