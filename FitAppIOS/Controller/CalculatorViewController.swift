@@ -31,6 +31,7 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
         label.font = .systemFont(ofSize: 24, weight: .bold)
         label.textColor = .darkGray
         label.text = "Peso (kg)"
+        label.accessibilityLabel = "Peso em quilos"
         self.view.addSubview(label)
         return label
     }()
@@ -55,6 +56,7 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
         label.font = .systemFont(ofSize: 24, weight: .bold)
         label.textColor = .darkGray
         label.text = "Altura (cm)"
+        label.accessibilityLabel = "Altura em centímetros"
         self.view.addSubview(label)
         return label
     }()
@@ -104,6 +106,7 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
         label.text = "CALCULAR IMC"
+        label.isAccessibilityElement = false
         self.view.addSubview(label)
         return label
     }()
@@ -159,7 +162,7 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
             button.centerXAnchor.constraint(equalTo: buttonBackground.centerXAnchor),
             button.widthAnchor.constraint(equalTo: buttonBackground.widthAnchor),
             
-            bmiProfile.topAnchor.constraint(equalTo: buttonBackground.bottomAnchor, constant: 100),
+            bmiProfile.topAnchor.constraint(equalTo: buttonBackground.bottomAnchor, constant: 40),
             bmiProfile.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.7),
             bmiProfile.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
         ])

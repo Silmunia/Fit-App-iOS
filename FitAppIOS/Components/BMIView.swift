@@ -93,7 +93,9 @@ class BMIView: UIView {
     
     private func updateLabels() {
         valueLabel.text = String(format: "%.2f", bmiValue)
+        valueLabel.accessibilityLabel = "IMC de " + valueLabel.text!
         categoryLabel.text = bmiCategory
+        categoryLabel.accessibilityLabel = "IMC classificado como " + categoryLabel.text!
     }
 
 }
