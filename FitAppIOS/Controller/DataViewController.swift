@@ -202,6 +202,33 @@ class DataViewController: UIViewController {
             caloryTitle.leadingAnchor.constraint(equalTo: caloryValue.leadingAnchor),
             caloryTitle.trailingAnchor.constraint(equalTo: caloryValue.trailingAnchor),
         ])
+        
+        groupAccessibilityElements()
+    }
+    
+    private func groupAccessibilityElements() {
+        var elements = [UIAccessibilityElement]()
+        
+        let stepsGroup = UIAccessibilityElement(accessibilityContainer: self)
+        stepsGroup.accessibilityLabel = "\(stepsValue.text!) \(stepsTitle.text!)"
+        stepsGroup.accessibilityFrameInContainerSpace = stepsValue.frame.union(stepsTitle.frame)
+        
+        let durationGroup = UIAccessibilityElement(accessibilityContainer: self)
+        durationGroup.accessibilityLabel = "\(durationTitle.text!) de \(durationValue.text!)"
+        durationGroup.accessibilityFrameInContainerSpace = durationValue.frame.union(durationTitle.frame)
+        
+        let distanceGroup = UIAccessibilityElement(accessibilityContainer: self)
+        distanceGroup.accessibilityLabel = "\(distanceTitle.text!) de \(distanceValue.text!)"
+        distanceGroup.accessibilityFrameInContainerSpace = distanceValue.frame.union(distanceTitle.frame)
+        
+        let calorieGroup = UIAccessibilityElement(accessibilityContainer: self)
+        calorieGroup.accessibilityLabel = "\(caloryValue.text!) \(caloryTitle.text!)"
+        calorieGroup.accessibilityFrameInContainerSpace = caloryValue.frame.union(caloryTitle.frame)
+        
+        elements.append(stepsGroup)
+        elements.append(durationGroup)
+        elements.append(distanceGroup)
+        elements.append(calorieGroup)
     }
 
 }
