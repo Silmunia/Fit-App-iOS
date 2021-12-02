@@ -45,6 +45,7 @@ class DataViewController: UIViewController {
         label.font = .systemFont(ofSize: 38, weight: .bold)
         label.textColor = .white
         label.text = "15/10"
+        label.accessibilityLabel = "15 de Outubro"
         label.textAlignment = .center
         self.view.addSubview(label)
         return label
@@ -89,6 +90,7 @@ class DataViewController: UIViewController {
         label.font = .systemFont(ofSize: valueTextSize, weight: .bold)
         label.textColor = .darkGray
         label.text = "32:15"
+        label.accessibilityLabel = "32 minutos e 15 segundos"
         label.textAlignment = .center
         self.view.addSubview(label)
         return label
