@@ -74,6 +74,7 @@ class ActivityViewController: UIViewController {
         label.font = .systemFont(ofSize: 22, weight: .bold)
         label.textColor = .darkGray
         label.text = String(format: "%02d:%02d:%02d", timeCounter[0], timeCounter[1], timeCounter[2])
+        label.accessibilityLabel = "\(timeCounter[0]) horas, \(timeCounter[1]) minutos e \(timeCounter[2]) segundos"
         label.textAlignment = .center
         self.view.addSubview(label)
         return label
@@ -371,6 +372,7 @@ class ActivityViewController: UIViewController {
     
     private func updateLabels() {
         timeLabel.text = String(format: "%02d:%02d:%02d", timeCounter[0], timeCounter[1], timeCounter[2])
+        timeLabel.accessibilityLabel = "\(timeCounter[0]) horas, \(timeCounter[1]) minutos e \(timeCounter[2]) segundos"
         
         distanceLabel.text = String(format: "%.1f km", distanceValue)
         
