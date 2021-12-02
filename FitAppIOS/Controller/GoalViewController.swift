@@ -36,6 +36,7 @@ class GoalViewController: UIViewController {
         button.isUserInteractionEnabled = true
         button.addTarget(self, action: #selector(startActivity), for: .touchUpInside)
         button.accessibilityLabel = "Começar atividade"
+        button.accessibilityHint = "Leva para tela de corrida"
         self.view.addSubview(button)
         return button
     }()
@@ -51,6 +52,7 @@ class GoalViewController: UIViewController {
         label.numberOfLines = 0
         label.lineBreakMode = .byWordWrapping
         label.text = "COMEÇAR"
+        label.isAccessibilityElement = false
         self.view.addSubview(label)
         return label
     }()
@@ -70,6 +72,7 @@ class GoalViewController: UIViewController {
         label.font = .systemFont(ofSize: 38, weight: .bold)
         label.textColor = .darkGray
         label.text = "5420"
+        label.accessibilityLabel = label.text! + " Passos"
         label.textAlignment = .center
         self.view.addSubview(label)
         return label
@@ -90,6 +93,7 @@ class GoalViewController: UIViewController {
         label.font = .systemFont(ofSize: 38, weight: .bold)
         label.textColor = .darkGray
         label.text = "1002"
+        label.accessibilityLabel = label.text! + " Calorias"
         label.textAlignment = .center
         self.view.addSubview(label)
         return label
