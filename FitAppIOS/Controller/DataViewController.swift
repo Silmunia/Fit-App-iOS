@@ -51,26 +51,12 @@ class DataViewController: UIViewController {
         return label
     }()
     
-    lazy var stepsTitle: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: titleTextSize, weight: .regular)
-        label.textColor = .darkGray
-        label.text = "Passos"
-        label.textAlignment = .center
-        self.view.addSubview(label)
-        return label
-    }()
-    
-    lazy var stepsValue: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: valueTextSize, weight: .bold)
-        label.textColor = .darkGray
-        label.text = "3789"
-        label.textAlignment = .center
-        self.view.addSubview(label)
-        return label
+    lazy var stepsElement: DataViewMultilabel = {
+        let element = DataViewMultilabel()
+        element.translatesAutoresizingMaskIntoConstraints = false
+        element.setLabels(titleString: "Passos", valueString: "3789", acessibilityString: "3789 Passos")
+        self.view.addSubview(element)
+        return element
     }()
     
     lazy var durationTitle: UILabel = {
@@ -166,14 +152,10 @@ class DataViewController: UIViewController {
             verticalSeparator.heightAnchor.constraint(equalToConstant: 1),
             verticalSeparator.centerYAnchor.constraint(equalTo: horizontalSeparator.centerYAnchor),
             
-            stepsValue.topAnchor.constraint(equalTo: dataImage.bottomAnchor, constant: 55),
-            stepsValue.heightAnchor.constraint(equalToConstant: stepsValue.font.lineHeight),
-            stepsValue.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: -self.view.bounds.width/4),
-            
-            stepsTitle.topAnchor.constraint(equalTo: stepsValue.bottomAnchor, constant: 2.5),
-            stepsTitle.heightAnchor.constraint(equalToConstant: stepsTitle.font.lineHeight),
-            stepsTitle.leadingAnchor.constraint(equalTo: stepsValue.leadingAnchor),
-            stepsTitle.trailingAnchor.constraint(equalTo: stepsValue.trailingAnchor),
+            stepsElement.topAnchor.constraint(equalTo: dataImage.bottomAnchor, constant: 5),
+            stepsElement.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 5),
+            stepsElement.trailingAnchor.constraint(equalTo: horizontalSeparator.leadingAnchor, constant: -5),
+            stepsElement.bottomAnchor.constraint(equalTo: verticalSeparator.topAnchor, constant: -5),
             
             durationValue.topAnchor.constraint(equalTo: dataImage.bottomAnchor, constant: 55),
             durationValue.heightAnchor.constraint(equalToConstant: durationValue.font.lineHeight),
