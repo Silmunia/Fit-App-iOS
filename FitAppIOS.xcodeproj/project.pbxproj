@@ -22,6 +22,7 @@
 		96E349842729ACB0004D60CE /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E349832729ACB0004D60CE /* TabViewController.swift */; };
 		96E349892729ACB1004D60CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E349882729ACB1004D60CE /* Assets.xcassets */; };
 		96E3498C2729ACB1004D60CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E3498A2729ACB1004D60CE /* LaunchScreen.storyboard */; };
+		96FBB58A27599DE70084B00B /* DataViewMultilabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FBB58927599DE70084B00B /* DataViewMultilabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		96E349882729ACB1004D60CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E3498B2729ACB1004D60CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E3498D2729ACB1004D60CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96FBB58927599DE70084B00B /* DataViewMultilabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewMultilabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				961A2F93273C87560012FFD8 /* HistoryTableCell.swift */,
 				961A2F99273C95300012FFD8 /* UserNameView.swift */,
 				961A2F9B273CA8070012FFD8 /* BMIView.swift */,
+				96FBB58927599DE70084B00B /* DataViewMultilabel.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				96E349822729ACB0004D60CE /* SceneDelegate.swift in Sources */,
 				961A2F8C273C7E800012FFD8 /* HistoryViewController.swift in Sources */,
 				961A2F9C273CA8070012FFD8 /* BMIView.swift in Sources */,
+				96FBB58A27599DE70084B00B /* DataViewMultilabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
