@@ -7,23 +7,43 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		961A2F8C273C7E800012FFD8 /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F8B273C7E800012FFD8 /* HistoryViewController.swift */; };
+		961A2F8E273C7E980012FFD8 /* CalculatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F8D273C7E980012FFD8 /* CalculatorViewController.swift */; };
+		961A2F90273C7F1F0012FFD8 /* GoalViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F8F273C7F1F0012FFD8 /* GoalViewController.swift */; };
+		961A2F92273C7F2F0012FFD8 /* RunningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F91273C7F2F0012FFD8 /* RunningViewController.swift */; };
+		961A2F94273C87560012FFD8 /* HistoryTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F93273C87560012FFD8 /* HistoryTableCell.swift */; };
+		961A2F98273C8F7B0012FFD8 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F97273C8F7B0012FFD8 /* UIImageExtension.swift */; };
+		961A2F9A273C95300012FFD8 /* UserNameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F99273C95300012FFD8 /* UserNameView.swift */; };
+		961A2F9C273CA8070012FFD8 /* BMIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F9B273CA8070012FFD8 /* BMIView.swift */; };
+		965C17552743004D00A0C634 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965C17542743004D00A0C634 /* DataViewController.swift */; };
+		965C175727431E4800A0C634 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965C175627431E4800A0C634 /* ActivityViewController.swift */; };
 		96E349802729ACB0004D60CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3497F2729ACB0004D60CE /* AppDelegate.swift */; };
 		96E349822729ACB0004D60CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E349812729ACB0004D60CE /* SceneDelegate.swift */; };
-		96E349842729ACB0004D60CE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E349832729ACB0004D60CE /* ViewController.swift */; };
-		96E349872729ACB0004D60CE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E349852729ACB0004D60CE /* Main.storyboard */; };
+		96E349842729ACB0004D60CE /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E349832729ACB0004D60CE /* TabViewController.swift */; };
 		96E349892729ACB1004D60CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 96E349882729ACB1004D60CE /* Assets.xcassets */; };
 		96E3498C2729ACB1004D60CE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96E3498A2729ACB1004D60CE /* LaunchScreen.storyboard */; };
+		96FBB58827598EAF0084B00B /* DataViewMultilabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FBB58727598EAF0084B00B /* DataViewMultilabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		961A2F8B273C7E800012FFD8 /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
+		961A2F8D273C7E980012FFD8 /* CalculatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalculatorViewController.swift; sourceTree = "<group>"; };
+		961A2F8F273C7F1F0012FFD8 /* GoalViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalViewController.swift; sourceTree = "<group>"; };
+		961A2F91273C7F2F0012FFD8 /* RunningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningViewController.swift; sourceTree = "<group>"; };
+		961A2F93273C87560012FFD8 /* HistoryTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTableCell.swift; sourceTree = "<group>"; };
+		961A2F97273C8F7B0012FFD8 /* UIImageExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		961A2F99273C95300012FFD8 /* UserNameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserNameView.swift; sourceTree = "<group>"; };
+		961A2F9B273CA8070012FFD8 /* BMIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIView.swift; sourceTree = "<group>"; };
+		965C17542743004D00A0C634 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
+		965C175627431E4800A0C634 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
 		96E3497C2729ACB0004D60CE /* FitAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E3497F2729ACB0004D60CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E349812729ACB0004D60CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		96E349832729ACB0004D60CE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		96E349862729ACB0004D60CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		96E349832729ACB0004D60CE /* TabViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabViewController.swift; sourceTree = "<group>"; };
 		96E349882729ACB1004D60CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		96E3498B2729ACB1004D60CE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		96E3498D2729ACB1004D60CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96FBB58727598EAF0084B00B /* DataViewMultilabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewMultilabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +57,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		961A2F8A273C7C720012FFD8 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				96E349832729ACB0004D60CE /* TabViewController.swift */,
+				961A2F8B273C7E800012FFD8 /* HistoryViewController.swift */,
+				961A2F8D273C7E980012FFD8 /* CalculatorViewController.swift */,
+				961A2F8F273C7F1F0012FFD8 /* GoalViewController.swift */,
+				961A2F91273C7F2F0012FFD8 /* RunningViewController.swift */,
+				965C17542743004D00A0C634 /* DataViewController.swift */,
+				965C175627431E4800A0C634 /* ActivityViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		961A2F95273C875C0012FFD8 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				961A2F93273C87560012FFD8 /* HistoryTableCell.swift */,
+				961A2F99273C95300012FFD8 /* UserNameView.swift */,
+				961A2F9B273CA8070012FFD8 /* BMIView.swift */,
+				96FBB58727598EAF0084B00B /* DataViewMultilabel.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		961A2F96273C8F530012FFD8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				961A2F97273C8F7B0012FFD8 /* UIImageExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		96E349732729ACB0004D60CE = {
 			isa = PBXGroup;
 			children = (
@@ -56,10 +109,11 @@
 		96E3497E2729ACB0004D60CE /* FitAppIOS */ = {
 			isa = PBXGroup;
 			children = (
+				961A2F96273C8F530012FFD8 /* Extensions */,
+				961A2F95273C875C0012FFD8 /* Components */,
+				961A2F8A273C7C720012FFD8 /* Controller */,
 				96E3497F2729ACB0004D60CE /* AppDelegate.swift */,
 				96E349812729ACB0004D60CE /* SceneDelegate.swift */,
-				96E349832729ACB0004D60CE /* ViewController.swift */,
-				96E349852729ACB0004D60CE /* Main.storyboard */,
 				96E349882729ACB1004D60CE /* Assets.xcassets */,
 				96E3498A2729ACB1004D60CE /* LaunchScreen.storyboard */,
 				96E3498D2729ACB1004D60CE /* Info.plist */,
@@ -127,7 +181,6 @@
 			files = (
 				96E3498C2729ACB1004D60CE /* LaunchScreen.storyboard in Resources */,
 				96E349892729ACB1004D60CE /* Assets.xcassets in Resources */,
-				96E349872729ACB0004D60CE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +191,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				96E349842729ACB0004D60CE /* ViewController.swift in Sources */,
+				961A2F92273C7F2F0012FFD8 /* RunningViewController.swift in Sources */,
+				961A2F8E273C7E980012FFD8 /* CalculatorViewController.swift in Sources */,
+				961A2F9A273C95300012FFD8 /* UserNameView.swift in Sources */,
+				96E349842729ACB0004D60CE /* TabViewController.swift in Sources */,
+				965C17552743004D00A0C634 /* DataViewController.swift in Sources */,
+				961A2F94273C87560012FFD8 /* HistoryTableCell.swift in Sources */,
 				96E349802729ACB0004D60CE /* AppDelegate.swift in Sources */,
+				961A2F98273C8F7B0012FFD8 /* UIImageExtension.swift in Sources */,
+				965C175727431E4800A0C634 /* ActivityViewController.swift in Sources */,
+				961A2F90273C7F1F0012FFD8 /* GoalViewController.swift in Sources */,
 				96E349822729ACB0004D60CE /* SceneDelegate.swift in Sources */,
+				961A2F8C273C7E800012FFD8 /* HistoryViewController.swift in Sources */,
+				961A2F9C273CA8070012FFD8 /* BMIView.swift in Sources */,
+				96FBB58827598EAF0084B00B /* DataViewMultilabel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		96E349852729ACB0004D60CE /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				96E349862729ACB0004D60CE /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		96E3498A2729ACB1004D60CE /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -288,25 +344,26 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = Q2AATBYW8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitAppIOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TCC Fit App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.henriquepcosta.fitapp.FitAppIOS;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.henriquepcosta.fitapp.TCCFitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -316,25 +373,26 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
+				CURRENT_PROJECT_VERSION = 6;
 				DEVELOPMENT_TEAM = Q2AATBYW8Z;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = FitAppIOS/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "TCC Fit App";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.henriquepcosta.fitapp.FitAppIOS;
+				MARKETING_VERSION = 2.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.henriquepcosta.fitapp.TCCFitApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
