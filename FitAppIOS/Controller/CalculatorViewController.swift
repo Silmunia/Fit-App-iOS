@@ -156,7 +156,7 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
             button.centerXAnchor.constraint(equalTo: buttonBackground.centerXAnchor),
             button.widthAnchor.constraint(equalTo: buttonBackground.widthAnchor),
             
-            bmiProfile.topAnchor.constraint(equalTo: buttonBackground.bottomAnchor, constant: 100),
+            bmiProfile.topAnchor.constraint(equalTo: buttonBackground.bottomAnchor, constant: 40),
             bmiProfile.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.7),
             bmiProfile.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
         ])
