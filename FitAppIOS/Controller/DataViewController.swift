@@ -9,9 +9,6 @@ import UIKit
 
 class DataViewController: UIViewController {
     
-    let valueTextSize: CGFloat = 42
-    let titleTextSize: CGFloat = 26
-    
     lazy var dataImage: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -59,71 +56,28 @@ class DataViewController: UIViewController {
         return element
     }()
     
-    lazy var durationTitle: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: titleTextSize, weight: .regular)
-        label.textColor = .darkGray
-        label.text = "Duração"
-        label.textAlignment = .center
-        self.view.addSubview(label)
-        return label
+    lazy var durationElement: DataViewMultilabel = {
+        let element = DataViewMultilabel()
+        element.translatesAutoresizingMaskIntoConstraints = false
+        element.setLabels(titleString: "Duração", valueString: "32:15", acessibilityString: "Duração de 32 minutos e 15 segundos")
+        self.view.addSubview(element)
+        return element
     }()
     
-    lazy var durationValue: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: valueTextSize, weight: .bold)
-        label.textColor = .darkGray
-        label.text = "32:15"
-        label.accessibilityLabel = "32 minutos e 15 segundos"
-        label.textAlignment = .center
-        self.view.addSubview(label)
-        return label
+    lazy var distanceElement: DataViewMultilabel = {
+        let element = DataViewMultilabel()
+        element.translatesAutoresizingMaskIntoConstraints = false
+        element.setLabels(titleString: "Distância", valueString: "13.14 km", acessibilityString: "Distância de 13.14 km")
+        self.view.addSubview(element)
+        return element
     }()
-    
-    lazy var distanceTitle: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: titleTextSize, weight: .regular)
-        label.textColor = .darkGray
-        label.text = "Distância"
-        label.textAlignment = .center
-        self.view.addSubview(label)
-        return label
-    }()
-    
-    lazy var distanceValue: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: valueTextSize, weight: .bold)
-        label.textColor = .darkGray
-        label.text = "13.14 km"
-        label.textAlignment = .center
-        self.view.addSubview(label)
-        return label
-    }()
-    
-    lazy var caloryTitle: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: titleTextSize, weight: .regular)
-        label.textColor = .darkGray
-        label.text = "Calorias"
-        label.textAlignment = .center
-        self.view.addSubview(label)
-        return label
-    }()
-    
-    lazy var caloryValue: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: valueTextSize, weight: .bold)
-        label.textColor = .darkGray
-        label.text = "273 kCal"
-        label.textAlignment = .center
-        self.view.addSubview(label)
-        return label
+
+    lazy var calorieElement: DataViewMultilabel = {
+        let element = DataViewMultilabel()
+        element.translatesAutoresizingMaskIntoConstraints = false
+        element.setLabels(titleString: "Calorias", valueString: "273 kCal", acessibilityString: "273 kCal")
+        self.view.addSubview(element)
+        return element
     }()
 
     override func viewDidLoad() {
@@ -157,32 +111,20 @@ class DataViewController: UIViewController {
             stepsElement.trailingAnchor.constraint(equalTo: horizontalSeparator.leadingAnchor, constant: -5),
             stepsElement.bottomAnchor.constraint(equalTo: verticalSeparator.topAnchor, constant: -5),
             
-            durationValue.topAnchor.constraint(equalTo: dataImage.bottomAnchor, constant: 55),
-            durationValue.heightAnchor.constraint(equalToConstant: durationValue.font.lineHeight),
-            durationValue.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: self.view.bounds.width/4),
+            durationElement.topAnchor.constraint(equalTo: dataImage.bottomAnchor, constant: 5),
+            durationElement.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -5),
+            durationElement.leadingAnchor.constraint(equalTo: horizontalSeparator.trailingAnchor, constant: 5),
+            durationElement.bottomAnchor.constraint(equalTo: verticalSeparator.topAnchor, constant: -5),
             
-            durationTitle.topAnchor.constraint(equalTo: durationValue.bottomAnchor, constant: 2.5),
-            durationTitle.heightAnchor.constraint(equalToConstant: durationTitle.font.lineHeight),
-            durationTitle.leadingAnchor.constraint(equalTo: durationValue.leadingAnchor),
-            durationTitle.trailingAnchor.constraint(equalTo: durationValue.trailingAnchor),
+            distanceElement.topAnchor.constraint(equalTo: verticalSeparator.bottomAnchor, constant: 5),
+            distanceElement.leadingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.leadingAnchor, constant: 5),
+            distanceElement.trailingAnchor.constraint(equalTo: horizontalSeparator.leadingAnchor, constant: -5),
+            distanceElement.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -5),
             
-            distanceValue.topAnchor.constraint(equalTo: horizontalSeparator.centerYAnchor, constant: 55),
-            distanceValue.heightAnchor.constraint(equalToConstant: distanceValue.font.lineHeight),
-            distanceValue.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: -self.view.bounds.width/4),
-            
-            distanceTitle.topAnchor.constraint(equalTo: distanceValue.bottomAnchor, constant: 2.5),
-            distanceTitle.heightAnchor.constraint(equalToConstant: distanceTitle.font.lineHeight),
-            distanceTitle.leadingAnchor.constraint(equalTo: distanceValue.leadingAnchor),
-            distanceTitle.trailingAnchor.constraint(equalTo: distanceValue.trailingAnchor),
-            
-            caloryValue.topAnchor.constraint(equalTo: horizontalSeparator.centerYAnchor, constant: 55),
-            caloryValue.heightAnchor.constraint(equalToConstant: caloryValue.font.lineHeight),
-            caloryValue.centerXAnchor.constraint(equalTo: self.view.centerXAnchor, constant: self.view.bounds.width/4),
-            
-            caloryTitle.topAnchor.constraint(equalTo: caloryValue.bottomAnchor, constant: 2.5),
-            caloryTitle.heightAnchor.constraint(equalToConstant: caloryTitle.font.lineHeight),
-            caloryTitle.leadingAnchor.constraint(equalTo: caloryValue.leadingAnchor),
-            caloryTitle.trailingAnchor.constraint(equalTo: caloryValue.trailingAnchor),
+            calorieElement.topAnchor.constraint(equalTo: verticalSeparator.bottomAnchor, constant: 5),
+            calorieElement.trailingAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.trailingAnchor, constant: -5),
+            calorieElement.leadingAnchor.constraint(equalTo: horizontalSeparator.trailingAnchor, constant: 5),
+            calorieElement.bottomAnchor.constraint(equalTo: self.view.safeAreaLayoutGuide.bottomAnchor, constant: -5),
         ])
         
     }
