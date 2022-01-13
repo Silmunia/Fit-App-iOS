@@ -20,7 +20,7 @@ class GoalViewController: UIViewController {
     
     lazy var buttonBackground: UIImageView = {
         let background = UIImageView()
-        let viewColor = UIImage.imageWithColor(color: .systemBlue)
+        let viewColor = UIImage.imageWithColor(color: UIColor.init(named: "AccentColor")!)
         background.translatesAutoresizingMaskIntoConstraints = false
         background.image = viewColor
         background.layer.cornerRadius = 40
@@ -58,7 +58,7 @@ class GoalViewController: UIViewController {
         let view = UIImageView()
         view.image = UIImage(systemName: "figure.walk")
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.tintColor = .systemBlue
+        view.tintColor = UIColor.init(named: "AccentColor")!
         self.view.addSubview(view)
         return view
     }()
@@ -78,7 +78,7 @@ class GoalViewController: UIViewController {
         let view = UIImageView()
         view.image = UIImage(systemName: "flame.fill")
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.tintColor = .systemBlue
+        view.tintColor = UIColor.init(named: "AccentColor")!
         self.view.addSubview(view)
         return view
     }()

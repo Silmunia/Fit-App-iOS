@@ -71,7 +71,7 @@ class CalculatorViewController: UIViewController, UITextViewDelegate {
     
     lazy var buttonBackground: UIImageView = {
         let background = UIImageView()
-        let viewColor = UIImage.imageWithColor(color: .systemBlue)
+        let viewColor = UIImage.imageWithColor(color: UIColor.init(named: "AccentColor")!)
         background.translatesAutoresizingMaskIntoConstraints = false
         background.image = viewColor
         background.layer.cornerRadius = 40

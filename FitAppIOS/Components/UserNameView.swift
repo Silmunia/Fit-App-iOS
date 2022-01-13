@@ -35,7 +35,7 @@ class UserNameView: UIView {
     lazy var roundBackground: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        let color = UIImage.imageWithColor(color: .systemBlue)
+        let color = UIImage.imageWithColor(color: UIColor.init(named: "AccentColor")!)
         view.image = color
         view.layer.cornerRadius = 45
         view.layer.masksToBounds = true
