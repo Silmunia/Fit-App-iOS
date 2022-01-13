@@ -43,7 +43,7 @@ class ActivityViewController: UIViewController {
         let view = UIImageView()
         view.image = UIImage(systemName: "flame.fill")
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.tintColor = UIColor(red: 0, green: 86/255, blue: 179/255, alpha: 1.0)
+        view.tintColor = UIColor.init(named: "AccentColor")!
         self.view.addSubview(view)
         return view
     }()
@@ -63,7 +63,7 @@ class ActivityViewController: UIViewController {
         let view = UIImageView()
         view.image = UIImage(systemName: "clock.fill")
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.tintColor = UIColor(red: 0, green: 86/255, blue: 179/255, alpha: 1.0)
+        view.tintColor = UIColor.init(named: "AccentColor")!
         self.view.addSubview(view)
         return view
     }()
@@ -84,7 +84,7 @@ class ActivityViewController: UIViewController {
         let view = UIImageView()
         view.image = UIImage(systemName: "heart.fill")
         view.translatesAutoresizingMaskIntoConstraints = false
-        view.tintColor = UIColor(red: 0, green: 86/255, blue: 179/255, alpha: 1.0)
+        view.tintColor = UIColor.init(named: "AccentColor")!
         self.view.addSubview(view)
         return view
     }()
@@ -102,7 +102,7 @@ class ActivityViewController: UIViewController {
     
     lazy var playBackground: UIImageView = {
         let background = UIImageView()
-        let viewColor = UIImage.imageWithColor(color: UIColor(red: 0, green: 86/255, blue: 179/255, alpha: 1.0))
+        let viewColor = UIImage.imageWithColor(color: UIColor.init(named: "AccentColor")!)
         background.translatesAutoresizingMaskIntoConstraints = false
         background.image = viewColor
         background.layer.cornerRadius = 80
@@ -136,7 +136,7 @@ class ActivityViewController: UIViewController {
     
     lazy var stopBackground: UIImageView = {
         let background = UIImageView()
-        let viewColor = UIImage.imageWithColor(color: UIColor(red: 0, green: 86/255, blue: 179/255, alpha: 1.0))
+        let viewColor = UIImage.imageWithColor(color: UIColor.init(named: "AccentColor")!)
         background.translatesAutoresizingMaskIntoConstraints = false
         background.image = viewColor
         background.layer.cornerRadius = 80
@@ -170,7 +170,7 @@ class ActivityViewController: UIViewController {
     
     lazy var pauseBackground: UIImageView = {
         let background = UIImageView()
-        let viewColor = UIImage.imageWithColor(color: UIColor(red: 0, green: 86/255, blue: 179/255, alpha: 1.0))
+        let viewColor = UIImage.imageWithColor(color: UIColor.init(named: "AccentColor")!)
         background.translatesAutoresizingMaskIntoConstraints = false
         background.image = viewColor
         background.layer.cornerRadius = 80

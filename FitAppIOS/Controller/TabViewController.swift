@@ -41,11 +41,11 @@ class TabViewController: UITabBarController {
         calculatorViewController.tabBarItem = calculatorItem
         
         let goalNavigationController = UINavigationController(rootViewController: goalViewController)
-        goalNavigationController.navigationBar.tintColor = UIColor(red: 0, green: 86/255, blue: 179/255, alpha: 1.0)
+        goalNavigationController.navigationBar.tintColor = UIColor.init(named: "AccentColor")!
         let historyNavigationController = UINavigationController(rootViewController: historyViewController)
-        historyNavigationController.navigationBar.tintColor = UIColor(red: 0, green: 86/255, blue: 179/255, alpha: 1.0)
+        historyNavigationController.navigationBar.tintColor = UIColor.init(named: "AccentColor")!
         
-        self.tabBar.tintColor = UIColor(red: 0, green: 86/255, blue: 179/255, alpha: 1.0)
+        self.tabBar.tintColor = UIColor.init(named: "AccentColor")!
         self.viewControllers = [historyNavigationController, goalNavigationController, calculatorViewController]
         self.selectedIndex = 1
     }

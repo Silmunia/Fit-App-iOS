@@ -15,7 +15,7 @@ class HistoryTableCell: UITableViewCell {
     lazy var roundImage: UIImageView = {
         let view = UIImageView()
         view.translatesAutoresizingMaskIntoConstraints = false
-        let color = UIImage.imageWithColor(color: UIColor(red: 0, green: 86/255, blue: 179/255, alpha: 1.0))
+        let color = UIImage.imageWithColor(color: UIColor.init(named: "AccentColor")!)
         view.image = color
         view.layer.cornerRadius = 25
         view.layer.masksToBounds = true
