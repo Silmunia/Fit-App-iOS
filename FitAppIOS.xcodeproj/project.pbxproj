@@ -94,13 +94,13 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
-		96B83F7327B02AB900CDC27D /* Evaluation Docs (BR) */ = {
+		96B83F7327B02AB900CDC27D /* Evaluation-Docs-(BR) */ = {
 			isa = PBXGroup;
 			children = (
 				96B83F7427B02AB900CDC27D /* Avaliação 1.pdf */,
 				96B83F7527B02AB900CDC27D /* Avaliação 2.pdf */,
 			);
-			path = "Evaluation Docs (BR)";
+			path = "Evaluation-Docs-(BR)";
 			sourceTree = "<group>";
 		};
 		96E349732729ACB0004D60CE = {
@@ -122,7 +122,7 @@
 		96E3497E2729ACB0004D60CE /* FitAppIOS */ = {
 			isa = PBXGroup;
 			children = (
-				96B83F7327B02AB900CDC27D /* Evaluation Docs (BR) */,
+				96B83F7327B02AB900CDC27D /* Evaluation-Docs-(BR) */,
 				961A2F96273C8F530012FFD8 /* Extensions */,
 				961A2F95273C875C0012FFD8 /* Components */,
 				961A2F8A273C7C720012FFD8 /* Controller */,
