@@ -17,6 +17,8 @@
 		961A2F9C273CA8070012FFD8 /* BMIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961A2F9B273CA8070012FFD8 /* BMIView.swift */; };
 		965C17552743004D00A0C634 /* DataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965C17542743004D00A0C634 /* DataViewController.swift */; };
 		965C175727431E4800A0C634 /* ActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965C175627431E4800A0C634 /* ActivityViewController.swift */; };
+		96B83F7627B02AB900CDC27D /* Avaliação 1.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 96B83F7427B02AB900CDC27D /* Avaliação 1.pdf */; };
+		96B83F7727B02AB900CDC27D /* Avaliação 2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 96B83F7527B02AB900CDC27D /* Avaliação 2.pdf */; };
 		96E349802729ACB0004D60CE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E3497F2729ACB0004D60CE /* AppDelegate.swift */; };
 		96E349822729ACB0004D60CE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E349812729ACB0004D60CE /* SceneDelegate.swift */; };
 		96E349842729ACB0004D60CE /* TabViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E349832729ACB0004D60CE /* TabViewController.swift */; };
@@ -36,6 +38,8 @@
 		961A2F9B273CA8070012FFD8 /* BMIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BMIView.swift; sourceTree = "<group>"; };
 		965C17542743004D00A0C634 /* DataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataViewController.swift; sourceTree = "<group>"; };
 		965C175627431E4800A0C634 /* ActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityViewController.swift; sourceTree = "<group>"; };
+		96B83F7427B02AB900CDC27D /* Avaliação 1.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Avaliação 1.pdf"; sourceTree = "<group>"; };
+		96B83F7527B02AB900CDC27D /* Avaliação 2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "Avaliação 2.pdf"; sourceTree = "<group>"; };
 		96E3497C2729ACB0004D60CE /* FitAppIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitAppIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E3497F2729ACB0004D60CE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		96E349812729ACB0004D60CE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -90,6 +94,15 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		96B83F7327B02AB900CDC27D /* Evaluation Docs (BR) */ = {
+			isa = PBXGroup;
+			children = (
+				96B83F7427B02AB900CDC27D /* Avaliação 1.pdf */,
+				96B83F7527B02AB900CDC27D /* Avaliação 2.pdf */,
+			);
+			path = "Evaluation Docs (BR)";
+			sourceTree = "<group>";
+		};
 		96E349732729ACB0004D60CE = {
 			isa = PBXGroup;
 			children = (
@@ -109,6 +122,7 @@
 		96E3497E2729ACB0004D60CE /* FitAppIOS */ = {
 			isa = PBXGroup;
 			children = (
+				96B83F7327B02AB900CDC27D /* Evaluation Docs (BR) */,
 				961A2F96273C8F530012FFD8 /* Extensions */,
 				961A2F95273C875C0012FFD8 /* Components */,
 				961A2F8A273C7C720012FFD8 /* Controller */,
@@ -179,7 +193,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				96B83F7627B02AB900CDC27D /* Avaliação 1.pdf in Resources */,
 				96E3498C2729ACB1004D60CE /* LaunchScreen.storyboard in Resources */,
+				96B83F7727B02AB900CDC27D /* Avaliação 2.pdf in Resources */,
 				96E349892729ACB1004D60CE /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
